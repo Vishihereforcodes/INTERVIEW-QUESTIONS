@@ -20,7 +20,7 @@ int BinarySearch(int *arr ,int start , int end , int n , int num)
 	return -1 ;
 }
 
-int ReducingInfiniteArray(int *arr)
+int ReducingInfiniteArray(int *arr , int num)
 {
     int start = 0, end = 1;
 	
