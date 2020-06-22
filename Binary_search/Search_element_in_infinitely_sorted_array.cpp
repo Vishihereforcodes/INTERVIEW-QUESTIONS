@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int BinarySearch(int *arr ,int start , int end , int n , int num)
+int BinarySearch(int *arr ,int start , int end , int num)
 {
 	while(start <= end)
 	{
