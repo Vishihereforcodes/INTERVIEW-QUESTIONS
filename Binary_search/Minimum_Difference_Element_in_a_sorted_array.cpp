@@ -1,0 +1,43 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int MinDiffElement(int *arr , int n , int num)
+{
+	int start = 0 , end = n - 1 , mid ;
+	
+	while(start <= end)
+	{
+		mid = start + (end - start)/2 ;
+		
+		if(arr[mid] == num)
+		    return arr[mid];
+		
+		else if(arr[mid] < num)
+		    start = mid + 1 ;
+		
+		else
+		    end = mid - 1 ;
+	}
+	
+	int ans1 = abs(arr[start] - num);
+	int ans2 = abs(arr[end] - num);
+	
+	return (ans1 < ans2)? arr[start] : arr[end] ;
+}
+
+int main()
+{
+	int n , num;
+	cout<<"Enter size of the array : "<<endl;
+	cin>>n;
+	int arr[n];
+	
+	for(int i=0;i<n;i++)
+	cin>>arr[i];
+	
+	cout<<"Enter the element whose min diff element is to be find : "<<endl;
+	cin>>num;
+	
+	cout<<"Minumum difference element is = "<< MinDiffElement(arr , n , num);
+}
