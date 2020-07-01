@@ -1,3 +1,4 @@
+// no of times an arty is rotated is the index of minimum element present in that array. 
 #include<iostream>
 using namespace std;
 
