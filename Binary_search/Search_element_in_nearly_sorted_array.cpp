@@ -1,3 +1,5 @@
+// Nearly sorted array is the array in which the element which should be present at with index in a sorted array may be 
+// present at i, i-1, i+1 th index 
 #include<iostream>
 using namespace std;
 
