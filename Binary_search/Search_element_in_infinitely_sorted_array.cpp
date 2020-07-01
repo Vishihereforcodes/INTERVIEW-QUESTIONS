@@ -1,3 +1,4 @@
+//as we can't search an element in an infinite array so we will reduce our search space. 
 #include<iostream>
 using namespace std;
 
