@@ -1,5 +1,6 @@
 // In this question,  we have to find the index of the peak element in an array which is not sorted. 
 // peak element is the element which is greater than its left and right element.
+
 int peakElement(int arr[], int n)
 {
   int start = 0 , end = n-1 , mid ;
@@ -8,10 +9,10 @@ int peakElement(int arr[], int n)
       mid = start + (end - start)/2;
       if(mid>0 && mid<n-1) 
       {
-        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1])
+        if(arr[mid] >= arr[mid-1] && arr[mid] >= arr[mid+1])
         return mid ;
         
-        else if(arr[mid-1]>arr[mid]) 
+        else if(arr[mid-1] >= arr[mid]) 
         end = mid - 1;
         
         else
@@ -20,7 +21,7 @@ int peakElement(int arr[], int n)
       
       else if(mid == 0) // for index 0 we have to compare it only with the element in its right
       {
-          if(arr[0]>arr[1])
+          if(arr[0] >= arr[1])
           return 0 ;
           
           else
@@ -29,7 +30,7 @@ int peakElement(int arr[], int n)
       
       else if(mid == n-1) // for last index,  we have to compare it only with its left element 
       {
-          if(arr[n-1]>arr[n - 2])
+          if(arr[n-1] >= arr[n - 2])
           return n-1 ;
           
           else
