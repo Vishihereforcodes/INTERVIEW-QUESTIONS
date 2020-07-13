@@ -11,8 +11,10 @@ int SearchInRowColumnwiseSortedMatrix(int a[][n] , int m , int n , int key)
 			return p ;
 		}
 		
-		else if(a[i][j] < key) i++ ;
-		else if(a[i][j] > key) j-- ;
+		else if(a[i][j] < key) 
+			i++ ;
+		else if(a[i][j] > key) 
+			j-- ;
 	}
 	return -1 ;
 }
