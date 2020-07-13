@@ -1,3 +1,5 @@
+// arrays present in left of minimum element and right of minimum element are sorted. 
+// so finding index of minimum element and then searching in its left and right
 #include<iostream>
 using namespace std;
 
