@@ -1,7 +1,7 @@
 // In this question,  we have to find the index of the peak element in an array which is not sorted. 
 // peak element is the element which is greater than its left and right element.
 
-int peakElement(int arr[], int n)
+int peakElement(int *arr, int n)
 {
   int start = 0 , end = n-1 , mid ;
   while(start<=end)
