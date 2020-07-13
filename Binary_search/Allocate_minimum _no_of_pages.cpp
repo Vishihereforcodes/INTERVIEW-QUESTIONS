@@ -5,15 +5,18 @@ bool isPossible(int *a , int n , int k , int curr_min)
 	
 	for(int i = 0 ; i < n ; i++)
 	{
-		if(a[i] > curr_min) return false ;
+		if(a[i] > curr_min)
+			return false ;
 		if(curr_sum + a[i] > curr_min)
 		{
 			studentsRequired++ ;
 			curr_sum = a[i] ;
 			
-			if(studentsRequired > k) return false ;
+			if(studentsRequired > k) 
+				return false ;
 		}
-		else curr_sum += a[i] ;
+		else 
+			curr_sum += a[i] ;
 		
 	}
 	return true ;
@@ -25,7 +28,8 @@ int FindPages(int *a , int n , int k )
 	long long sum = 0 ;
 	if(n < k) return -1 ;
 	
-	for(int i = 0 ; i < n ; i++) sum += a[i] ;
+	for(int i = 0 ; i < n ; i++) 
+		sum += a[i] ;
 	
 	int start = 0 , end = sum ;
 	int result = INT_MAX ;
@@ -38,7 +42,8 @@ int FindPages(int *a , int n , int k )
 			result = min(result , mid ) ;
 			end = mid - 1 ;
 		}
-		else start = mid + 1 ;
+		else
+			start = mid + 1 ;
 	}
 	return result ;
 }
