@@ -1,3 +1,12 @@
+// Question:- You have to find all the permutations of the given string after adding spacees between two characters in the string.
+
+/*
+Approach:-
+1. Base case:- Whenever input string gets empty we get a permutaion in output string.
+2. Now , we will have two outputs everytime based on our decisions (either add a character with space or add it without space).
+3. Now , we have to recursively call the fxn with output1 and output2.
+*/
+
 #include<iostream>
 #include<string>
 using namespace std;
