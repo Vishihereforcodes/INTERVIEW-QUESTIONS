@@ -9,12 +9,9 @@
 + There are three approaches to come up with code of a recursion problem which are as follows:-
 
 ✨ IBH :- IBH stands for (Induction Base case Hypotheses).
-
-✨ Recursion tree.
-
-✨ Choice Diagram.
-
-✨ IBH:-
+- Recursion tree.
+- Choice Diagram.
+- IBH:-
 
 INDUCTION- It is the way to apply hypotheses we generated to write code.
 
