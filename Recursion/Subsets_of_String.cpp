@@ -1,3 +1,12 @@
+// Question:- You have to print all the subsets of the given string . for ex:- string = "abc" then subsets are :- ''  'a'  'b' 'c' 'ab' 'bc' 'ac' 'abc' .
+
+/*
+Approach:-
+1. Base case:- Everytime, whwn our input string becomes empty we get a permutation in output string.
+2. Otherwise, we will have two outputs everytime based on our decisions (either we are including next chracter of the string or not).
+3. So, we will recursively call solve fxn for output1 and output2.
+*/
+
 #include<iostream>
 #include<string>
 using namespace std;
