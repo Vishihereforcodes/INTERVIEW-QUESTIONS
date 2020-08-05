@@ -1,6 +1,6 @@
 // Question:- To find height of a given binary tree.
 
-/*Approach:- 
+/* Approach:- 
 1. Height of binary tree is the height of root node plus maximum of height of left subtree and right subtree.
 2. So, we will calculate height of left and right subtree through recursion and add the maximum one into height of root node(1).
 */
