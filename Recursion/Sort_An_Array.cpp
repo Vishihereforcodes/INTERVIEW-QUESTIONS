@@ -3,10 +3,10 @@
 /*
 Approach:-
 1. Base case:- If vector contains single element then it is already sorted.
-2. Otherwise, Pop the last element of vector ans store it in temp variable now call sort fxn in rest of the vector(which will sort the rest vector).
+2. Otherwise, Pop the last element of vector and store it in temp variable now call sort fxn in rest of the vector(which will sort the rest vector).
 3. Now, only work is to push/insert the popped element in the vector back. So,in insert fxn, if vector is empty or the element is the greatest/ equaal of the elements
 in the vector then push the element .
-4. Otherwise, pop an element from stack and again check the condition through recursive call and atlast push the element back.
+4. Otherwise, pop an element from vector and again check the condition through recursive call and atlast push the element back.
 */
 
 void insert(vector<int>& v,int val)
