@@ -1,3 +1,12 @@
+// Question:- You have to find all the permutations of the given lowercase string after changing lowecase to uppercase letters in the string.
+
+/*
+Approach:-
+1. Base case:- Whenever input string gets empty we get a permutation in output string.
+2. Now , we will have two outputs everytime based on our decisions (either add a character after converting it into uppercase or add it without converting into uppercase).
+3. Now , we have to recursively call the fxn with output1 and output2.
+*/
+
 #include<iostream>
 #include<string>
 using namespace std;
