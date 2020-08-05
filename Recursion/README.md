@@ -7,8 +7,11 @@
 2. Smaller input.
 
 + There are three approaches to come up with code of a recursion problem which are as follows:-
+
 ✨ IBH :- IBH stands for (Induction Base case Hypotheses).
+
 ✨ Recursion tree.
+
 ✨ Choice Diagram.
 
 ✨ IBH:-
