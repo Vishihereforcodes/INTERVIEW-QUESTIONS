@@ -1,3 +1,11 @@
+// Question:- Reverse the given stack using recursion.
+
+/*
+Approach:- 
+1. Base case:- If single element stack then simply return .
+2. Otherwise pop the top element until it empty and one by one push back the popped elements using insert fxn.
+*/
+
 void insert(stack<int>& s,int val)
 {
     if(s.empty())
