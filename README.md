@@ -4,6 +4,6 @@ This repository contains some of the important interview questions on important 
 
 Topic Covered(Till Now)
 
-1.Binary Search
+- Binary Search
 
-2.Recursion
+- Recursion
