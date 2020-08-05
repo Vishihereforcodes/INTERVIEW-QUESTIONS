@@ -12,7 +12,7 @@
 ✨ Recursion tree.
 ✨ Choice Diagram.
 
-- IBH:-
+✨ IBH:-
 
 * INDUCTION- It is the way to apply hypotheses we generated to write code.
 * BASE CASE- At this , we have to terminate our recursion call.
