@@ -1,4 +1,4 @@
-[Question](https://practice.geeksforgeeks.org/problems/permutation-with-spaces/) :- You have to find all the permutations of the given string after adding spacees between two characters in the string.
+//Question :- (https://practice.geeksforgeeks.org/problems/permutation-with-spaces/0).
 
 /*
 Approach:-
