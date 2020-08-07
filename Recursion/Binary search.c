@@ -1,15 +1,19 @@
+//Question :- (https://www.geeksforgeeks.org/c-program-for-binary-search-recursive-and-iterative/)
+
 #include<stdio.h>
 
 int binSrch(int *a,int t,int low,int high)
 {
+    //Element is not found in array
     if(low > high)
     return -1;
     
     int mid = low + (high-low)/2;
     
+    // If the element is present at the middle itself
     if(a[mid] == t)
     return mid;
-    else if(a[mid] < t)
+    else if(a[mid] < t)// If element is larger than mid, then it can only be present in right subarray
     return binSrch(a,t,mid+1,high);
     else
     return binSrch(a,t,low,mid-1);
