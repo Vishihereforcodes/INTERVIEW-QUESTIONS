@@ -1,19 +1,23 @@
 // Question:- Delete middle element of the given stack.
 
 /*
-Approach:-
-1. Base case:- If stack is empty then simply return it.
-2. Otherwise call solve fxn , in solve fxn , we will check if middle of the stack is at the top of the stack , if yes then pop the top .
-3. Otherwise, store the top of the stack in temp variable and call solve with k-1 until middle element is at top of the stack .
-4. Atlast push the temp again into the stack.
+Approach :-
+we have to remove middle element of stack.Let's say middle element is at kth position in the stack.So we will remove top element from stack and store in a temporary
+variable.When we get middle element at the top of stack we pop out that element and push the rest element back to the stack.
+
+Input: 1,2,3,4,5
+Output : 1,2,4,5.
 */
 
 stack<int> deleteMiddleElement(stack<int>s)
 {
     int n = s.size();
+    
+    //If stack is empty then simply return it.
     if(n == 0)
         return s;
-
+    
+    //Find middle element position
     int k = n/2 + 1;
 
     solve(s,k);
@@ -22,15 +26,19 @@ stack<int> deleteMiddleElement(stack<int>s)
 
 void solve(stack<int>& s,int k)
 {
+    //if middle element of the stack is at the top of the stack
     if(k == 1)
     {
         s.pop();
         return;
     }
 
-    int val = s.top();
+    //store the top of the stack in temp variable
+    int temp = s.top();
     s.pop();
 
     solve(s,k-1);
-    s.push(val);
+    
+    //After deleting middle element push the temp again into the stack
+    s.push(temp);
 }
