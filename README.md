@@ -1,4 +1,4 @@
- # INTERVIEW-QUESTIONS 
+ # Data Structure And Algorithms
 
 This repository contains some of the important interview questions on important Data structures and Algorithms topics.
 
