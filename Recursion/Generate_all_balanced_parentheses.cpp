@@ -1,3 +1,6 @@
+#include<bits/stdc++.h>
+using namespace std;
+
 void solve(int open , int close , string op , vector<string>&v)
 {
 	if(open == 0 && close == 0) 
@@ -21,11 +24,14 @@ void solve(int open , int close , string op , vector<string>&v)
 	}
 }
 
-vector<string> BalancedParentheses(int n)
+int main()
 {
 	vector<string>v;
+	int n ;
+	cin>>n;
 	int open = n , close = n ;
 	string op = "" ;
 	solve(open , close , op , v);
-	return v;
+	for(int i = 0 ; i < v.size() ; i++)
+	    cout<<v[i]<<" ";
 }
