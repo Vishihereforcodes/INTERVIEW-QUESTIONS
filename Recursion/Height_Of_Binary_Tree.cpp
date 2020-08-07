@@ -7,6 +7,7 @@
 
 int heightOfBinaryTree(node* root)
 {
+    //Height of Null Subtree is Zero
     if(root == NULL)
         return 0;
         
