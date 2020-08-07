@@ -1,4 +1,4 @@
-// Question:- Print all N-bit binary numbers having more 1's than 0's for any prefix.
+// Question:- https://www.geeksforgeeks.org/print-n-bit-binary-numbers-1s-0s-prefixes/.
 
 /*
 Approach:-
@@ -17,16 +17,12 @@ void solve(int ones , int zeroes , int n , string op)
 		cout<<op<<" ";
 		return ;
 	}
-	
-	string op1 = op ;
-	op1 += '1';
-	solve(ones + 1 , zeroes , n-1 , op1 );
+
+	solve(ones + 1 , zeroes , n-1 , op + '1' );
 	
 	if(ones > zeroes)
 	{
-		string op2 = op;
-		op2 += '0';
-		solve(ones , zeroes+1 , n-1 , op2);
+		solve(ones , zeroes+1 , n-1 ,op + '0');
 	}
 }
 int main()
