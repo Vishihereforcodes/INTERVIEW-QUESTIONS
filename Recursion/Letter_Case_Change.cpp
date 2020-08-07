@@ -1,7 +1,8 @@
-/* Question:- You are given a string containing lowercase , uppercase characters and numerals . You have to find all the permutations of the given string 
- after changing uppercase and lowercase letters in the string.*/
-
 /*
+ Question:- You are given a string containing lowercase , uppercase characters and numerals . You have to find all the permutations of the given string 
+ after changing uppercase and lowercase letters in the string.
+ link - https://leetcode.com/problems/to-lower-case/
+
 Approach:-
 1. Base case:- Whenever input string gets empty we get a permutaion in output string.
 2. Now , we will have two outputs when the character is alphabet based on our decisions (either add an uppercase character or lowercase character in output).
