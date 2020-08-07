@@ -13,13 +13,15 @@
 2. Recursion tree.
 3. Choice Diagram.
 
-✨ IBH:-
+## IBH
 
 * INDUCTION- It is the way to apply hypotheses we generated to write code.
 * BASE CASE- At this , we have to terminate our recursion call.
 * HYPOTHESES- It is the idea for solving the problem .
 
-✨ Recursion Tree:- It is the way we take our decisions and because of decisions our input become smaller at each and every decision.At last what we have is a tree like structure. It is made by input/output method. We get our base condition at leaf nodes of the recursive tree.
+## Recursion Tree 
+It is the way we take our decisions and because of decisions our input become smaller at each and every decision.At last what we have is a tree like structure. It is made by input/output method. We get our base condition at leaf nodes of the recursive tree.
 After making recursion tree , writing code will be cakewalk for us.
 
-✨ Choice Diagram:- Problem like subset of string, we have choices to include that character or not.
+## Choice Diagram
+Problem like subset of string, we have choices to include that character or not.
