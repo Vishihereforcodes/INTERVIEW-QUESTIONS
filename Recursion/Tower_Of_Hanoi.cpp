@@ -4,6 +4,7 @@ There are some conditions which are:-
 1. We can't put larger disk on smaller one.
 2. We can take only one disk at a time.
 3. We can take help of helper tower to shift disks.
+link :- (https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/)
 */
 
 /*
