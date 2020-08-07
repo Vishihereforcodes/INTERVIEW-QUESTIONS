@@ -24,4 +24,4 @@ It is the way we take our decisions and because of decisions our input become sm
 After making recursion tree , writing code will be cakewalk for us.
 
 ## Choice Diagram
-Problem like subset of string, we have choices to include that character or not.
+Problem like subset of string or choice of path(left,right,down,up).
