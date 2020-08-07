@@ -1,4 +1,4 @@
-// Question:- Delete middle element of the given stack.
+// Question:- https://www.geeksforgeeks.org/delete-middle-element-stack/
 
 /*
 Approach :-
