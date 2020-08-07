@@ -1,3 +1,12 @@
+// Question:- Print all N-bit binary numbers having more 1's than 0's for any prefix.
+
+/*
+Approach:-
+1. Base case:- whenever our input size becomes zero we get a binary number satisfying our conditions.
+2. Otherwise , we can add 1 anytime in our output binary number until we reach its size.
+3. But , we can add 0 in our output binary number only when we have already more ones in our binary number than zeroes.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
