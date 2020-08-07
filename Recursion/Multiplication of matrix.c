@@ -21,10 +21,13 @@ void multiply(int row,int col,int same,int a[][same],int b[][col],int c[][col])
 {
     static int sum = 0,i = 0,j = 0,k = 0;
 
+    //row of first matrix
     if(i < row)
     {
+        //column of second matrix
         if(j < col)
         {
+            //Evaluation of c[i][j]
             if(k < same)
             {
                 sum += a[i][k]*b[k][j];
@@ -32,11 +35,13 @@ void multiply(int row,int col,int same,int a[][same],int b[][col],int c[][col])
                 multiply(row,col,same,a,b,c);
             }
             c[i][j] = sum;
+            //set sum == 0 and evaluate next element in same row
             sum = 0;
             k = 0;
             j++;
             multiply(row,col,same,a,b,c);
         }
+        //after finding element of one row got to next row
         j = 0;
         i++;
         multiply(row,col,same,a,b,c) ;
