@@ -1,3 +1,15 @@
+/*
+Question:- There are n number of soldiers standing in a circle . As they are less in number and are not able to faught with the opposing soldiers . So,
+they decided to kill (n-1) soldiers one by one by counting k soldiers . Everytime soldier at kth position is to be killed. Atlast , only one soldier will left.
+We have to return the position of that soldier (as he has to commit suicide :P) .
+
+Approach:-
+1. Base case:- when we will have only one soldier in our vector then we will return its position as vector is storing positions of the soldiers.
+2. Otherwise , we simply delete a soldier at (index + k)th position from vector as we initialised index with 0 . Modulo is to prevent going out of bound.
+3. Then ,  recursively delete all n-1 soldiers and return the ans atlast.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
