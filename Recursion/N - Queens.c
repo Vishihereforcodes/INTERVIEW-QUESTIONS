@@ -35,7 +35,7 @@ int nQueens(int n,int board[][n],int queens)
             if(nQueens(n,board,queens-1))
                 return 1;//queen placed successfully
 
-            board[i][j] = 0;//remove queen(baktrack)
+            board[i][j] = 0;//remove queen(backtrack)
         }
     }
     return 0;
