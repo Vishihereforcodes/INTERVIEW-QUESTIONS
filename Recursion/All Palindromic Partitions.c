@@ -1,3 +1,5 @@
+//Question :- (https://www.geeksforgeeks.org/print-palindromic-partitions-string/)
+
 #include<stdio.h>
 
 //Check substring is palindrome or not
