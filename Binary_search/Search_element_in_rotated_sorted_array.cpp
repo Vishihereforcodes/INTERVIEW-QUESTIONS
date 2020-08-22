@@ -27,7 +27,7 @@ int IndexOfMinElement(int *arr , int n)
 	}
 }
 
-int BinarySearch(int *arr , int start ,int end , int num , int n)
+int BinarySearch(int *arr , int start ,int end , int num)
 {
 	while(start <= end)
 	{
@@ -44,8 +44,8 @@ int BinarySearch(int *arr , int start ,int end , int num , int n)
 }
 int main()
 {
-	int n , num , minIndex , ans1 , ans2 ;
-	cout<<"Enter size of the array : "<<endl;
+	int n , num , minIndex , ans;
+	cout<<"Enter size of the array : ";
 	cin>>n;
 	
 	cout<<"Enter the elements of rotated sorted array : "<<endl;
@@ -58,12 +58,17 @@ int main()
 	cin>>num;
 	
 	minIndex = IndexOfMinElement(arr , n) ;
-	ans1 = BinarySearch(arr , 0 , minIndex - 1 , num , n);
-	ans2 = BinarySearch(arr , minIndex , n - 1 , num , n) ;
+	ans = BinarySearch(arr , 0 , minIndex - 1 , num);
 	
-	if ( ans1 > -1)
-	cout<<"Index of searched element = "<< ans1;
-	else if(ans2 > -1)
-	cout<<"Index of searched element = "<< ans2;
+	if (ans != -1)
+		cout<<"Index of searched element = "<< ans;	
+	else
+	{
+		ans = BinarySearch(arr , minIndex , n - 1 , num) ;
+		if (ans != -1)
+		cout<<"Index of searched element = "<< ans;	
+	}
+	if(ans == -1)
+	cout<<"Element is not found.";
 	
 }
