@@ -1,4 +1,11 @@
 // no of times an array is rotated is the index of minimum element present in that array. 
+/*
+	if array is left rotated then 
+	number of rotation = (length - index of minimum element) %  length
+	
+	if array is right rotated then
+	number of rotation = index of minimum element
+*/
 #include<iostream>
 using namespace std;
 
