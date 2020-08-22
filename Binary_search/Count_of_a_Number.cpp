@@ -3,8 +3,8 @@
 	
 	How to do ?
 
-	Given array is sorted, so we can use binary search.Now in binary search , as we find a element we return that index.
-	but now we will store that index in temporary answer.and check in the left side for finding its first occurance and for last occurance we will check in right side.
+	Given array is sorted, so we can use binary search . Now in binary search , as we find an element we return that index.
+	but now we will store that index in temporary answer and check in the left side for finding its first occurance and for last occurance we will check in right side.
 	The difference in the indexes will be our required answer.
 */
 
