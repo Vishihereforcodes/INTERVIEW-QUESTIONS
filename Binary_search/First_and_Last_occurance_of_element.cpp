@@ -1,9 +1,9 @@
 /*
-	Question : Find first and last occurance of element in a sorted array,
+	Question : Find first and last occurance of an element in a sorted array.
 	
 	How to do ?
 	
-	Given array is sorted, so we can use binary search.Now in binary search , as  we find a element we return that index.but now we will store that index in temporary answer.
+	Given array is sorted, so we can use binary search . Now in binary search , as  we find an element we return that index but now we will store that index in temporary answer.
 	and check in the left side for finding its first occurance and for last occurance we will check in right side.
 	
 	**********************************************************************************************************************************************
