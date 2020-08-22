@@ -4,7 +4,7 @@ Question 2 :- Given a sorted array but we dont know its ascending or descendingl
 How to do ?
 simple divide this question in two part 
 1. find order of sorting(ascending/descending)
-2, search element using binary search
+2. search element using binary search
 
 step 1:
 1.If array size is 1. Then there will be no order....just we have to check that element is our target or not.
