@@ -40,7 +40,7 @@ int main()
 	
 	//target is found
 	if(index != -1)
-		cout<<"Index of the searched element is = "<< index;
+		cout<<"Index of the Target is = "<< index;
 	
 	//target is not found
 	else
