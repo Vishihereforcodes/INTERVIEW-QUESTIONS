@@ -85,9 +85,8 @@ int main()
 		cout<<"Index of first occurance = "<< index <<endl;
 		
 		index = LastOccurance(arr , n ,num);
-		
-		if(index != -1)
-			cout<<"Index of last occurance = "<< index <<endl;
+
+		cout<<"Index of last occurance = "<< index <<endl;
 	}
 	else
 		cout << "Target is not found.";
