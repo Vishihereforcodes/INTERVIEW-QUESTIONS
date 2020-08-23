@@ -10,7 +10,7 @@ A data structure is a particular way of organizing and storing data in a compute
 
 ### Topics Covered(Till Now)
 
-* Heap
+* [Heap](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Heaps)
 
 ## Algorithms
 
@@ -18,5 +18,5 @@ An algorithm is an unambiguous specification of how to solve a class of problems
 
 ### Topics Covered(Till Now)
 
-* Recursion
-* Binary Search
+* [Recursion](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Recursion)
+* [Binary Search](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Binary_search)
