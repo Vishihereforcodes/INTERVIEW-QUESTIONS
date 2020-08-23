@@ -1,5 +1,6 @@
 /*
 	Question : Find first and last occurance of an element in a sorted array.
+	[Question](https://leetcode.com/explore/learn/card/binary-search/135/template-iii/944/)
 	
 	How to do ?
 	
