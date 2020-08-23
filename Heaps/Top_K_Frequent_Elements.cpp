@@ -1,3 +1,13 @@
+/* https://leetcode.com/problems/top-k-frequent-elements/
+
+Question:- Given a non-empty array of integers, return the k most frequent elements.
+
+Approach:-
+As we have to find k most frequent elements so their frequency should be maximum so we will make a minimum heap and will take a pair in it and will store frequency of elements 
+as its first and the element as its first .
+
+*/
+
 typedef pair<int,int> p ;
 
 class Solution {
