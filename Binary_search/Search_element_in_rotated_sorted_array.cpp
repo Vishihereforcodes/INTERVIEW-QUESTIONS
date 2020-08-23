@@ -1,5 +1,10 @@
-// arrays present in left of minimum element and right of minimum element are sorted. 
-// so finding index of minimum element and then searching in its left and right
+/*
+ [first check this question](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/blob/master/Binary_search/Search_element_in_rotated_sorted_array.cpp)
+ 
+ Now we have rotated sorted array.And we have to find an element in that array.we know that arrays present in left of minimum element and right of minimum element are sorted. 
+ so finding index of minimum element and then searching in its left subarray , if doesn't exist in left subarray then we will check in right subarray.
+ */
+
 #include<iostream>
 using namespace std;
 
