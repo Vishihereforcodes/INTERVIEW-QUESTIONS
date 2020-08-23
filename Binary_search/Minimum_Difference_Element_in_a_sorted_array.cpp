@@ -1,7 +1,11 @@
-// In binary search, while searching an element if that element is present then it is itself its minimum diff element
-//but if its not present then at the end of the binary search our start and end Variables points to the right and left 
-// of the position at which the element should be present. So,  minimum diff element should be at index start or end 
-// at the end of the binary search. 
+/*
+ In binary search, while searching an element if that element is present then it is itself its minimum diff element
+ but if its not present then at the end of the binary search our start and end Variables points to the right and left 
+ of the position at which the element should be present. So, minimum diff element should be at index start or end 
+ at the end of the binary search. 
+ 
+*/
+
 #include<iostream>
 #include<math.h>
 using namespace std;
