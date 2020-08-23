@@ -1,8 +1,19 @@
+/*
+    Question : find first occurance of 1 in infinite binary sorted array.
+    
+    
+    As array is sorted,we wil use binary search. But the problem is how to store end as size is inifinite. So we know the target must be in range of start and end.
+    So we will find that range first then find first occurance of 1 in that range only. 
+    
+*/
+
 #include<iostream>
 using namespace std;
 
 int FirstOccurance(int *arr ,int start , int end , int num)
 {
+	int ans = -1;
+	
 	while(start <= end)
 	{
 		mid = start + (end - start)/2 ;
@@ -22,7 +33,7 @@ int FirstOccurance(int *arr ,int start , int end , int num)
 	return ans ;
 }
 
-int ReducingInfiniteArray(int *arr , int num)
+int searchInfiniteArray(int *arr , int num)
 {
     int start = 0, end = 1;
 	
@@ -31,6 +42,7 @@ int ReducingInfiniteArray(int *arr , int num)
 		start = end ;
 		end *= 2 ;
 	}	
-	return {start , end }; // Now these start and end values will be used to find the element.
+	
+	return FirstOccurance(arr ,start , end ,num); 
 }
 
