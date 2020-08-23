@@ -17,5 +17,6 @@ Heap is a tree based data structure in which we can store our elements and perfo
 
 Data structure we use for heap is Priority Queue.
 
-#### All the questions based on heap can be easily solved using sorting with nlogn time complexity where n is the number of elements in the array
-#### But we can solve the same question using heap in nlogk time complexity if we have to find some kth element by sorting only required k elements and popping the unnecessory .
+## Note:-
+#### => All the questions based on heap can be easily solved using sorting with nlogn time complexity where n is the number of elements in the array
+#### => But we can solve the same question using heap in nlogk time complexity if we have to find some kth element by sorting only required k elements and popping the unnecessory .
