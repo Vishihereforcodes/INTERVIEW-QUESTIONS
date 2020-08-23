@@ -1,5 +1,11 @@
-// Nearly sorted array is the array in which the element which should be present at with index in a sorted array may be 
-// present at i, i-1, i+1 th index 
+/*
+	Nearly sorted array is the array in which the element which should be present at i'th index in a sorted array may be 
+	present at (i, i-1, i+1)th index.
+	
+	How to solve this ?
+	Simple!! what we did in binary serach , we just compare mid with our target and take a decision that we have to return or move into left or right subarray.
+	Here we do a slight change,we will compare mid-1,mid,mid+1 and then take decision.
+*/
 #include<iostream>
 using namespace std;
 
@@ -21,10 +27,10 @@ int SearchingInNearlySortedArray(int *arr , int n , int num)
 		    return mid + 1 ;
 		
 		else if(arr[mid] < num)
-		    start = mid + 1 ;
+		    start = mid + 2 ; //we already check mid+1
 		
 		else
-		    end = mid - 1 ; 
+		    end = mid - 2 ; //we already check mid-1
 	}
 	return -1 ;
 }
@@ -44,5 +50,10 @@ int main()
 	cout<<"Enter the element to search : "<<endl;
 	cin>>num;
 	
-	cout<<"Index of searched element = "<< SearchingInNearlySortedArray(arr , n , num);	
+	int index = SearchingInNearlySortedArray(arr , n , num);
+	
+	if(index != -1)
+		cout<<"Index of searched element = "<< index;	
+	else
+		cout << "Element is not found.";
 }
