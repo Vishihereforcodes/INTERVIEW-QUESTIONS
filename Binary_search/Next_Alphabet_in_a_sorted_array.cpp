@@ -1,10 +1,12 @@
+// [Question](https://leetcode.com/explore/learn/card/binary-search/137/conclusion/977/)
+
 #include<iostream>
 using namespace std;
 
 char NextAlphabet(char *arr , int n , int num)
 {
 	int start = 0 , end = n - 1 , mid ;
-	char result = '#';
+	char result = arr[0];
 	
 	while(start <= end)
 	{
@@ -38,9 +40,6 @@ int main()
 	cin>>num;
 	
 	char result = NextAlphabet(arr , n , num);
-	
-	if(result != '#')
-		cout<< "Next alphabet of entered character = "<< result ;
-	else
-		cout<< "Next Alphabet is not found.";
+
+	cout<< "Next alphabet of entered character = "<< result ;
 }
