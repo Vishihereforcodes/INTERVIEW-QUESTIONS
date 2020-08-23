@@ -15,7 +15,7 @@ Heap is a tree based data structure in which we can store our elements and perfo
 * If we have smallest keyword in our problem then we will make a maximum heap(as we will pop all the elements greater than the required element).
 * If we have largest/greatest keyword in our problem then we will make a minimum heap(as we will pop all the elements lesser than the required element).
 
-Data structure we use for heap is Priority Queue.
+##### Data structure we use for heap is Priority Queue.
 
 ## Note:-
 #### => All the questions based on heap can be easily solved using sorting with nlogn time complexity where n is the number of elements in the array
