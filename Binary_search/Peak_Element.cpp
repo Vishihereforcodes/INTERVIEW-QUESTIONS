@@ -1,8 +1,12 @@
 // In this question,  we have to find the index of the peak element in an array which is not sorted. 
 // peak element is the element which is greater than its left and right element.
+// [Question](https://leetcode.com/explore/learn/card/binary-search/126/template-ii/948/)
 
 int peakElement(int *arr, int n)
 {
+  if(n == 1)
+    return 0;
+  
   int start = 0 , end = n-1 , mid ;
   
   while(start<=end)
