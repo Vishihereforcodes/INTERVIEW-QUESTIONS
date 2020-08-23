@@ -1,3 +1,12 @@
+/* https://leetcode.com/problems/sort-characters-by-frequency/
+
+Question:- Given a string, sort it in decreasing order based on the frequency of characters.
+
+Approach:- 
+As we have to sort them in decreasing order so we will take maximum heap and take a pair in it and will take frequency as its first and the character as its second .
+
+*/
+
 typedef pair<int,char> p;
 class Solution {
 public:
