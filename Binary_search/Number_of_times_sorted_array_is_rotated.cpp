@@ -1,5 +1,7 @@
 // no of times an array is rotated is the index of minimum element present in that array. 
 /*
+	[question](https://leetcode.com/explore/learn/card/binary-search/126/template-ii/949/)
+	
 	if array is left rotated then 
 	number of rotation = (length - index of minimum element) %  length
 	
