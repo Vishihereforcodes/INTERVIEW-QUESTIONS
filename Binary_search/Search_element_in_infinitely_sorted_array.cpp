@@ -1,4 +1,11 @@
-//as we can't search an element in an infinite array so we will reduce our search space. 
+/*
+    Question :  Search an element in a sorted array of an infinite size.
+    
+    How to do ?
+    
+    As array is sorted,we wil use binary search. But the problem is how to store end as size is inifinite. So we know the target must be in range of start and end.
+    So we will find that range first then search in this range only. 
+*/
 #include<iostream>
 using namespace std;
 
@@ -11,9 +18,8 @@ int BinarySearch(int *arr ,int start , int end , int num)
 		if(arr[mid] == num) 
 			return mid ;
 		
-		else if(arr[mid] > num){
+		else if(arr[mid] > num)
 			end = mid - 1 ;
-		}
 		
 		else
 			start = mid + 1 ;
@@ -21,7 +27,7 @@ int BinarySearch(int *arr ,int start , int end , int num)
 	return -1 ;
 }
 
-int ReducingInfiniteArray(int *arr , int num)
+int searchInfiniteArray(int *arr , int num)
 {
     int start = 0, end = 1;
 	
@@ -30,6 +36,6 @@ int ReducingInfiniteArray(int *arr , int num)
 		start = end ;
 		end *= 2 ;
 	}	
-	return {start , end }; // Now these start and end values will be used to find the element.
+    
+    return BinarySearch(arr ,start ,end ,num);
 }
-
