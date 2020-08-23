@@ -1,20 +1,24 @@
-int SearchInRowColumnwiseSortedMatrix(int a[][n] , int m , int n , int key)
+// [Question](https://leetcode.com/problems/search-a-2d-matrix-ii/)
+
+bool searchMatrix(vector<vector<int>>& matrix, int target) 
 {
-	pair< int , int >p;
-	int i = 0 , j = n - 1 ;
-	while(i >= 0 && i < m && j >= 0 && j < n)
-	{
-		if(a[i][j] = key ) 
-		{
-			p.first = i ;
-			p.second = j ;
-			return p ;
-		}
-		
-		else if(a[i][j] < key) 
-			i++ ;
-		else if(a[i][j] > key) 
-			j-- ;
-	}
-	return -1 ;
+       int m = matrix.size();
+	
+        if(m == 0)
+            return false;
+	
+        int n = matrix[0].size();
+        
+        int i = 0,j=n-1;
+        
+        while(i < m && j >= 0)
+        {
+            if(matrix[i][j] == target)
+                return true;
+            else if(matrix[i][j] > target)
+                j--;
+            else
+                i++;
+        }
+         return false;
 }
