@@ -4,24 +4,21 @@ using namespace std;
 char NextAlphabet(char *arr , int n , int num)
 {
 	int start = 0 , end = n - 1 , mid ;
-	char result;
+	char result = '#';
 	
 	while(start <= end)
 	{
 		mid = start + (end - start)/2 ;
 		
-		if(arr[mid] == num)
-			start = mid + 1 ;
-		
-		else if(arr[mid] > num){
+		if(arr[mid] > num)
+		{
 			result = arr[mid];
 			end = mid - 1 ;
 		}
-		
 		else
 			start = mid + 1 ;
 	}
-	return result ;
+	return result;
 }
 
 int main()
@@ -40,5 +37,10 @@ int main()
 	cout<<"Enter the element whose next character is to be find : "<<endl;
 	cin>>num;
 	
-	cout<<"Next alphabet of entered character = "<< NextAlphabet(arr , n , num);	
+	char result = NextAlphabet(arr , n , num);
+	
+	if(result != '#')
+		cout<< "Next alphabet of entered character = "<< result ;
+	else
+		cout<< "Next Alphabet is not found.";
 }
