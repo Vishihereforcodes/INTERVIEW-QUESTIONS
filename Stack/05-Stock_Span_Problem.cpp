@@ -7,20 +7,23 @@ void StockSpan(int *arr , int n)
     stack<pair<int,int>>s;
     for(int i = 0 ; i < n ; i++)
     {
-    if(s.empty())
-        v.push_back(-1);
-    else if(!s.empty() && s.top().first > arr[i])
-        v.push_back(s.top().second);
-    else if(!s.empty() && s.top().first <= arr[i])
-    {
-        while(!s.empty() && s.top().first <= arr[i])
-        {
-            s.pop();
-        }
         if(s.empty())
             v.push_back(-1);
-        else
-        v.push_back(s.top().second);
+        
+        else if(!s.empty() && s.top().first > arr[i])
+            v.push_back(s.top().second);
+        
+        else if(!s.empty() && s.top().first <= arr[i])
+        {
+            while(!s.empty() && s.top().first <= arr[i])
+            {
+                s.pop();
+            }
+            
+            if(s.empty())
+                v.push_back(-1);
+            else
+                v.push_back(s.top().second);
     }
     s.push(make_pair(arr[i] , i));
     }
