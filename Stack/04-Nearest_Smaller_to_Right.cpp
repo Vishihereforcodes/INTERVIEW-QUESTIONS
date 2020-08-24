@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void NextGreater(int *arr , int n)
+void NextSmallerToRight(int *arr , int n)
 {
     vector<int>v;
     stack<int>s;
@@ -41,6 +41,6 @@ int main()
     for(int i = 0 ; i < n ; i++)
     cin>>arr[i];
 
-    NextGreater(arr , n);
+    NextSmallerToRight(arr , n);
 
 }
