@@ -16,11 +16,11 @@ public:
         vector<vector<int>>ans;
         priority_queue<pair<int,pair<int,int>>>q;
         
-        for(int i = 0 ; i < points.size() ; i++)
+        for(int i = 0,n = points.size(); i < n; ++i)
         {
-            q.push(make_pair(pow(points[i][0],2) + pow(points[i][1],2) , make_pair(points[i][0], points[i][1])));
+            q.push({points[i][0]*points[i][0] + points[i][1]*points[i][1], {points[i][0], points[i][1]} } );
             
-            if(q.size() > K)
+            if(i+1 > K)
                 q.pop();
         }
         
@@ -29,6 +29,7 @@ public:
             ans.push_back({q.top().second.first , q.top().second.second});
             q.pop();
         }
+        
         return ans;
     }
 };
