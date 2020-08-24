@@ -24,7 +24,7 @@ void StockSpan(int *arr , int n)
                 v.push_back(-1);
             else
                 v.push_back(s.top().second);
-    }
+        }
     s.push(make_pair(arr[i] , i));
     }
     
