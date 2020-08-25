@@ -1,3 +1,23 @@
+/*
+    Brute Force Approach: Time complexity O(N^2) Space complexity O(1)
+    Simply run two nested loop. Outer loop will run from index 0 to n-1, and inner loop will run until we get a greater element or at the end of array.
+    
+    Efficient Approach: Time complexity O(N) Space complexity O(N)
+    As inner loop depend on outer loop so we can use stack. 
+    As for index = 2, we have to check in index = 1 to index = 0.
+    As for index = 3, we have to check in index = 2 to index = 0.
+    As for index = 4, we have to check in index = 3 to index = 0.
+    .
+    .
+    .
+    
+    So will store element from left in a stack and check three conditions.
+    1. if stack is empty that means next greater element is not posssible.So push -1.
+    2. if stack.top() is greater than i'th element that is the answer for that element.So push stack top element.
+    3. if stack.top() is smaller than i'th element then pop until above two condition is met.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -10,10 +30,10 @@ void NextGreaterToLeft(int *arr , int n)
         if(s.empty())
             v.push_back(-1);
         
-        else if(!s.empty() && s.top() > arr[i])
+        else if(s.top() > arr[i])
             v.push_back(s.top());
         
-        else if(!s.empty() && s.top() <= arr[i])
+        else if(s.top() <= arr[i])
         {
             while(!s.empty() && s.top() <= arr[i])
             {
@@ -23,7 +43,7 @@ void NextGreaterToLeft(int *arr , int n)
             if(s.empty())
                 v.push_back(-1);
             else
-            v.push_back(s.top());
+                v.push_back(s.top());
         }
         s.push(arr[i]);
     }
