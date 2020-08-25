@@ -19,6 +19,7 @@
     2. if stack.top() is greater than i'th element that is the answer for that element.So push stack top element.
     3. if stack.top() is smaller than i'th element then pop until above two condition is met.
 
+    Finally reverse our result vector.
 */
 #include<bits/stdc++.h>
 using namespace std;
