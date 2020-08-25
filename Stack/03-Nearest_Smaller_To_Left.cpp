@@ -13,8 +13,8 @@
     
     So will store element from left in a stack and check three conditions.
     1. if stack is empty that means next greater element is not posssible.So push -1.
-    2. if stack.top() is greater than i'th element that is the answer for that element.So push stack top element.
-    3. if stack.top() is smaller than i'th element then pop until above two condition is met.
+    2. if stack.top() is smaller than i'th element that is the answer for that element.So push stack top element.
+    3. if stack.top() is greater than i'th element then pop until above two condition is met.
 
 */
 #include<bits/stdc++.h>
