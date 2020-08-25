@@ -1,41 +1,45 @@
 /* https://leetcode.com/problems/min-stack/
-
+    
+    How to do ?
+    
+    Solution 1 : Using two stack 
+    
+    we will use another stack to store minimum element at the top. So that it can be access in O(1) time. We will push an element in another stack if stack is empty
+    or element is smaller than its top.
 */
-class MinStack {
+class MinStack 
+{
 public:
     stack<int>s , ss;
     
-    MinStack() {
-        
-    }
+    MinStack() {}
     
-    void push(int x) {
+    void push(int x) 
+    {
         s.push(x);
+        
         if(ss.empty() || ss.top() >= x)
             ss.push(x);
-        return;
     }
     
-    void pop() {
+    void pop() 
+    {
         if(s.empty())
             return ;
-        int ans = s.top();
-        if(ss.top() == ans)
+
+        if(ss.top() == s.top())
             ss.pop();
+        
         s.pop();
     }
     
-    int top() {
-        if(s.empty())
-        {
-            return 0;
-        }
-        return s.top();
+    int top()
+    {
+       return s.empty() ? -1 : s.top();
     }
     
-    int getMin() {
-        if(ss.empty())
-            return -1;
-        return ss.top();
+    int getMin() 
+    {
+        return ss.empty() ? -1 : ss.top();
     }
 };
