@@ -12,6 +12,7 @@ obtained or the remaining array is empty.
 * You have to search keyword "Sorted".
 * If you find sorted word in problem then 100% it can be solved using binary search very efficiently.
 
+<img src = "https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png" width = "250" height = "100"/>
 ![Image](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
 
 ## Resources
