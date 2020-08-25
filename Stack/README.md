@@ -10,3 +10,5 @@
 * Second for loop will be dependent on the first for loop.
 * Using stack it can be solved in O(n).
 
+## Resources
+* [Videos Playlist](https://www.youtube.com/watch?v=P1bAPZg5uaE&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd)
