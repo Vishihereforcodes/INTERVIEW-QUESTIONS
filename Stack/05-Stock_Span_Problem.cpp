@@ -57,3 +57,27 @@ int main()
     StockSpan(arr , n);
 
 }
+
+/**************************************************************************************************************************************************************************/
+
+class StockSpanner {
+    stack<pair<int,int>> s;
+    int c;
+public:
+    StockSpanner() {
+        s.push({9999999,0});
+        c=1;
+    }
+    
+    int next(int price) {
+        int ans;
+        
+        while(!s.empty() && s.top().first<=price)
+            s.pop();
+        
+        ans = currentIndex - s.top().second;// s.top().second == index of NGL
+        
+        s.push({price,currentIndex++});
+        return ans;
+    }
+};
