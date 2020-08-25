@@ -10,7 +10,7 @@ void NextSmallerToLeft(int *arr , int n , vector<int>&left)
     int pseudoIndex = -1 ;
     stack<pair<int,int>>s;
     for(int i = 0 ; i < n ; i++)
-        {
+    {
         if(s.empty())
             left.push_back(pseudoIndex);
         
