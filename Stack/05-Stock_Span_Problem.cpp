@@ -1,3 +1,12 @@
+/*
+    First solve this Question [Nearest Greater to Left](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/blob/master/Stack/02-Nearest_Greater_to_Left.cpp)
+    
+    [Online Stock Span](https://leetcode.com/problems/online-stock-span/)
+    
+    How to do ?
+    
+    Just find index of Nearest Greater to Left.Then simply minus index of NGL from indexes of output array.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -10,10 +19,10 @@ void StockSpan(int *arr , int n)
         if(s.empty())
             v.push_back(-1);
         
-        else if(!s.empty() && s.top().first > arr[i])
+        else if(s.top().first > arr[i])
             v.push_back(s.top().second);
         
-        else if(!s.empty() && s.top().first <= arr[i])
+        else if(s.top().first <= arr[i])
         {
             while(!s.empty() && s.top().first <= arr[i])
             {
