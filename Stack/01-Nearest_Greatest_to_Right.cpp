@@ -20,6 +20,10 @@
     3. if stack.top() is smaller than i'th element then pop until above two condition is met.
 
     Finally reverse our result vector.
+    
+    *************************************************************************************************************************
+    
+    Similar Question : (https://leetcode.com/problems/daily-temperatures/) 
 */
 #include<bits/stdc++.h>
 using namespace std;
