@@ -1,5 +1,15 @@
 /* https://leetcode.com/problems/min-stack/
-
+    
+    first check solution 1 of this problem using two stack (https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/blob/master/Stack/09-Min_Stack_using_Extra_Space.cpp)
+    
+    Solution 2: using O(1) space
+    
+    We will use global minimal variable to calculate minimum element.
+    Here if we found minimum element so we will update global varible,..but we will not push that element in stack. Rather we will push a flag so that while poping 
+    whenver we saw a flag it means we have to update our global variable.
+    
+    check comment for more info...
+    
 */
 class MyStack 
 { 
@@ -9,10 +19,7 @@ class MyStack
     // Prints minimum element of MyStack 
     void getMin() 
     { 
-        if (s.empty()) 
-            cout << "Stack is empty\n"; 
- 
-        else
+        if(!s.empty()) 
             cout <<"Minimum Element in the stack is: "<< minEle << "\n"; 
     } 
   
@@ -20,39 +27,24 @@ class MyStack
     void peek() 
     { 
         if (s.empty()) 
-        { 
-            cout << "Stack is empty "; 
             return; 
-        } 
   
         int t = s.top(); 
   
-        cout << "Top Most Element is: "; 
-
-        (t < minEle)? cout << minEle: cout << t; 
+        (t < minEle) ? cout << minEle : cout << t; //Flag will be smaller than our minimum element,so if flag occur at the top..we will print minimum element.
     } 
   
     // Remove the top element from MyStack 
     void pop() 
     { 
         if (s.empty()) 
-        { 
-            cout << "Stack is empty\n"; 
             return; 
-        } 
-  
-        cout << "Top Most Element Removed: "; 
-        int t = s.top(); 
-        s.pop(); 
- 
+
         if (t < minEle) 
         { 
-            cout << minEle << "\n"; 
-            minEle = 2*minEle - t; 
+            minEle = 2*minEle - s.top(); //Here s.top() is a flag that we use while push operation
         } 
-  
-        else
-            cout << t << "\n"; 
+        s.pop();
     } 
   
     // Removes top element from MyStack 
@@ -62,20 +54,16 @@ class MyStack
         { 
             minEle = x; 
             s.push(x); 
-            cout <<  "Number Inserted: " << x << "\n"; 
             return; 
         } 
   
         // If new number is less than minEle 
         if (x < minEle) 
         { 
-            s.push(2*x - minEle); 
+            s.push(2*x - minEle); //This is use as a flag while retrieving(popping) to get previous minimum value
             minEle = x; 
         } 
-  
         else
            s.push(x); 
-  
-        cout <<  "Number Inserted: " << x << "\n"; 
     } 
 }; 
