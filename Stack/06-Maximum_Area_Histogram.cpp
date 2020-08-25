@@ -1,3 +1,14 @@
+/* https://leetcode.com/problems/largest-rectangle-in-histogram/
+    
+    How to do ?
+    
+    Step 1: 
+    Calculate indexes of Next Greater element to right and Next Greater element to left.Then calculate width for every index.,using indexes of NGL and NGR.
+    
+    Step 2:
+    Calculate area of rectangle for each index and return maximum of it.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -6,14 +17,14 @@ void NextSmallerToLeft(int *arr , int n , vector<int>&left)
     int pseudoIndex = -1 ;
     stack<pair<int,int>>s;
     for(int i = 0 ; i < n ; i++)
-        {
+    {
         if(s.empty())
             left.push_back(pseudoIndex);
         
-        else if(!s.empty() && s.top().first < arr[i])
+        else if(s.top().first < arr[i])
             left.push_back(s.top().second);
         
-        else if(!s.empty() && s.top().first >= arr[i])
+        else if(s.top().first >= arr[i])
         {
             while(!s.empty() && s.top().first >= arr[i])
             {
@@ -38,10 +49,10 @@ void NextSmallerToRight(int *arr , int n , vector<int>&right)
         if(s.empty())
             right.push_back(pseudoIndex);
         
-        else if(!s.empty() && s.top().first < arr[i])
+        else if(s.top().first < arr[i])
             right.push_back(s.top().second);
         
-        else if(!s.empty() && s.top().first >= arr[i])
+        else if(s.top().first >= arr[i])
         {
             while(!s.empty() && s.top().first >= arr[i])
             {

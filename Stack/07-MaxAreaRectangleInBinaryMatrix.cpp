@@ -1,3 +1,7 @@
+/* https://leetcode.com/problems/maximal-rectangle/
+
+*/
+
 #include<bits/stdc++.h>
 #define n 4 
 #define m 4
@@ -8,7 +12,7 @@ void NextSmallerToLeft(vector<int>v , vector<int>&left)
     int pseudoIndex = -1 ;
     stack<pair<int,int>>s;
     for(int i = 0 ; i < v.size() ; i++)
-        {
+    {
         if(s.empty())
             left.push_back(pseudoIndex);
         

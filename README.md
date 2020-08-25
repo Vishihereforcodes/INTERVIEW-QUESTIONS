@@ -11,6 +11,7 @@ A data structure is a particular way of organizing and storing data in a compute
 ### Topics Covered(Till Now)
 
 * [Heap](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Heaps)
+* [Stack](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Stack)
 
 ## Algorithms
 
