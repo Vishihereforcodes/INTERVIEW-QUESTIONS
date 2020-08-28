@@ -34,7 +34,7 @@ void StockSpan(int *arr , int n)
             else
                 v.push_back(s.top().second);
         }
-    s.push(make_pair(arr[i] , i));
+        s.push(make_pair(arr[i] , i));
     }
     
     for(int i = 0 ; i < v.size() ; i++)
@@ -43,7 +43,7 @@ void StockSpan(int *arr , int n)
     }
 
     for(auto i : v)
-    cout<<i<<" ";
+        cout<<i<<" ";
 }
 
 int main()
@@ -52,7 +52,7 @@ int main()
     cin>>n;
     int arr[n];
     for(int i = 0 ; i < n ; i++)
-    cin>>arr[i];
+        cin>>arr[i];
 
     StockSpan(arr , n);
 
