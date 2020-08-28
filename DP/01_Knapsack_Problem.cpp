@@ -43,11 +43,12 @@ int knapsack(int value[], int weight[], int capacity, int N)
                 DP[i][j] = 0;
 
             else if (weight[i - 1] <= j)
-                return DP[i][j] = max(value[i - 1] + DP[i-1][j-weight[i-1]],DP[i-1][j]));
+                DP[i][j] = max(value[i - 1] + DP[i-1][j-weight[i-1]],DP[i-1][j]));
             else
-                return DP[i][j] = DP[i-1][j];
+                DP[i][j] = DP[i-1][j];
         }
     }
+    return DP[N][capacity];
 }
 
 int main()
