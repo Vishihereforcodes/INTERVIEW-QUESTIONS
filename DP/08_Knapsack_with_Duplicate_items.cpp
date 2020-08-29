@@ -1,3 +1,13 @@
+/* UnBounded Knapsack.
+
+Question:- We are given a knapsack and we have an array of items with price of each item and we have a max capacity of knapsack . We have to find the maximum profit after 
+including the items in the knapsack (ONE ITEM CAN BE ADDED MORE THAN ONCE).
+
+Approach:-
+
+
+*/
+
 #include <iostream>
 using namespace std;
 
