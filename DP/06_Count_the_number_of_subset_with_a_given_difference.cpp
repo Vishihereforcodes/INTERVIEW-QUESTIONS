@@ -1,3 +1,15 @@
+/*
+Question:- We are given an array , we have to count the total no of subsets whose sum gives us difference equal to given diff .
+
+Approach:- 
+As we know sum of our two subsets should be equal to the sum of array elements and their diff should be equal to the given diff so after solving these two equations
+we will get a particular value of subset sum which we will take in our countSubset fxn and will find this partiular sum.
+1. Initialisation:- If sum is zero then there is one possibility which is when array is null , if given array is empty then we can only achieve 0 sum.
+2. Code:- We will make choice only if the given element is less than or equal to the given sum and for counting all the possible subsets we will add all the possibilities 
+either after including or excluding the given element .
+
+*/
+
 #include <iostream>
 using namespace std;
 
