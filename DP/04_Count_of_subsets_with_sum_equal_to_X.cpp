@@ -1,3 +1,14 @@
+/* (https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/)
+
+Question:- Given an array arr[] of length N and an integer sum, the task is to find the number of subsets with sum equal to sum. 
+
+Approach:-
+1. Initialisation:- If value of sum is 0 then we can use null array so will put 1 possibility , if our array is empty then can't achieve our given sum so fill 0.
+2. Code:- We will make choice from elements which are less than or equal to our given sum and will add to get all possible subsets after including or not including 
+the given element to get the given sum .
+
+*/
+
 #include <iostream>
 using namespace std;
 
