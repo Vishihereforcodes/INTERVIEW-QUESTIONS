@@ -1,3 +1,14 @@
+/* (https://leetcode.com/problems/partition-equal-subset-sum/)
+
+Question:- Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the 
+sum of elements in both subsets is equal.
+
+Approach:- 
+1. We have to divide our array into two subsets of equal sum means if we find the half of the sum of the array elements then next half will also be there, so we have our sum as
+half of sum of all the elements of the array and will procede only if sum of elements of our array is even because only then the array can be divided into two equal halves.
+2. Initialisation:- If our
+*/
+
 class Solution
 {
 public:
