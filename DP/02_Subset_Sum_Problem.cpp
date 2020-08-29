@@ -1,3 +1,14 @@
+/* (https://www.geeksforgeeks.org/subset-sum-problem-dp-25/)
+
+Question:- Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.
+
+Approach:-
+1. Initialisation:- If value of sum is 0 then we can use null array so will put true , if our array is empty then can't achieve our given sum so fill false.
+2. Code:- We will make choice from elements which are less than or equal to our given sum and will take bit or to get true if after including or not including 
+the given element we are getting the sum .
+
+*/
+
 #include <iostream>
 using namespace std;
 
