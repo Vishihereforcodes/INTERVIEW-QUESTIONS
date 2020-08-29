@@ -7,7 +7,7 @@ Approach:-
 2. Code:- We will make choice only if the element is less than or equal to the given sum and we will take bit or to get true if either after including or excluding 
 the current element we get our sum .
 
-The difference between the subset sum will be minimum only if one subset is from left of the mid of the dp table and other is from right of it and the difference 
+The difference between the subset sum will be minimum only if one subset sum is from left of the mid of the dp table and other is from right of it and the difference 
 will be [(given sum - i) - i] as i is the particular subset sum at which the difference will be minimum and subtracting it from given sum will give us second subset sum . 
 
 In our fxn minimumSumPartition , we are using sum as half of the given sum that's why we did 2*sum in the end for calculating the diff.
