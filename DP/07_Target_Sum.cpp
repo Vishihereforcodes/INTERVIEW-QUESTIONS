@@ -1,3 +1,20 @@
+/* (https://leetcode.com/problems/target-sum/)
+
+Question:- You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. 
+For each integer, you should choose one from + and - as its new symbol.
+Find out how many ways to assign symbols to make sum of integers equal to target S.
+
+Approach:-
+As we know , sum of our two subset sums should be equal to our sum of array elements and diff should be equal to target sum , after solving these two equations we will get a 
+particluar value of our subset sum which we will take in our countsubsetsum fxn.
+
+1. Initialisation:- If the target sum is zero then there is only one possibility when both subset sum are equal , if array is empty then we can only achieve 0 target sum.
+2. Code:- We will make choice only if our element is less than or equal to the taget sum and we will add all possibilities either by including current element or not we
+get our target sum.
+3. If taget sum is greater than the sum of array elements then it is not possible .
+
+*/
+
 int memo[21][2001];
 
 class Solution {
