@@ -1,5 +1,16 @@
 /* (https://leetcode.com/problems/longest-palindromic-subsequence/)
 
+Question:-
+
+Approach:-
+1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
+else will not include that length and length will be the maximum of one less in the index.
+
+Using these steps we will get longest common subsequence.
+
+But for longest common subsequence we need two strings , so to get longest palindromic subsequence, we need the LCS b/w the string and its reverse .
+
 */
 
 class Solution
