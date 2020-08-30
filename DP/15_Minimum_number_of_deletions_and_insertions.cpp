@@ -4,7 +4,14 @@ Question:- Given two strings ‘str1’ and ‘str2’ of size m and n respectiv
 The task is to remove/delete and insert minimum number of characters from/in str1 so as to transform it into str2
 
 Approach:-
-1. 
+1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
+else will not include that length and length will be the maximum of one less in the index.
+
+Using these steps we will get the length of longest subsequence.
+Minimum no of deletions to convert str1 into str2 should be should be the remaining letters left after removing common letters from str1.
+Minimum no of insertions to convert str1 into str2 should be the remaining letters left after removing common letters from str2.
+
 */
 
 #include <iostream>
