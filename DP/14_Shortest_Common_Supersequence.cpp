@@ -10,7 +10,7 @@ subtract the longest common subsequence from the total length of both strings .
 2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
 else will not include that length and length will be the maximum of one less in the index.
 
-using these steps we will get length of longest common subsequence and substracting it from total length of both strings we will get our shortest common subsequence length.
+using these steps we will get length of longest common subsequence and substracting it from total length of both strings we will get our shortest common supersequence length.
 
 */
 
