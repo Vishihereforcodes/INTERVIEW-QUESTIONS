@@ -61,7 +61,9 @@ int main()
 
 /*********************************************************************************************************/
 
-// https://leetcode.com/problems/delete-operation-for-two-strings/solution/
+/* (https://leetcode.com/problems/delete-operation-for-two-strings/solution/)
+In this Question , we have to find the minimum no of deletions in both strings to make them same , so for doing this we will discard the common letters from both strings.
+*/
 
 class Solution
 {
