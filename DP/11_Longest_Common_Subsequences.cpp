@@ -1,5 +1,11 @@
 /* (https://leetcode.com/problems/longest-common-subsequence/)
 
+Question:- Given two strings text1 and text2, return the length of their longest common subsequence.
+
+Approach:- 
+1. Initialisation:- when any of the two strings is empty then empty subsequence will be common.
+2. Code:- Starting from whole length of both strings everytime we will check if both letters are equal , if yes then adding that in length and recurse for shorter length,
+if not equal then we will take maximum of the lengths after discarding the uncommon letter from both strings.
 
 */
 
