@@ -40,16 +40,19 @@ public:
         }
 
         string result;
-
+        
+        // traversing from last index of both strings 
         int i = n, j = m;
         while (i > 0 && j > 0)
         {
+            //if letters are equal in both then include that letter only once.
             if (str1[i - 1] == str2[j - 1])
             {
                 result.push_back(str1[i - 1]);
                 i--;
                 j--;
             }
+            // else if letters are not equal then add the uncommon letter from both strings and move towards maximum length .
             else
             {
                 if (DP[i - 1][j] > DP[i][j - 1])
@@ -58,13 +61,16 @@ public:
                     result.push_back(str2[--j]);
             }
         }
-
+        
+        // if first substring gets empty then shortest supersequence will be second one as we have to include both strings in subsequence.
         while (i > 0)
             result.push_back(str1[--i]);
-
+        
+        // if second substring gets empty then shortest supersequence will be first one as we have to include both strings in subsequence.
         while(j > 0)
             result.push_back(str2[--j]);
 
+        // as we will get the string in reverse order so we will reverse it.
         reverse(result.begin(), result.end());
         return result;
     }
