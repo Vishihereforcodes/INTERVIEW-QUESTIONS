@@ -2,10 +2,19 @@
 
 Question:- Given two strings text1 and text2, return the length of their longest common subsequence.
 
-Approach :- 
-1. Initialisation:- when any of the two strings is empty then empty subsequence will be common.
-2. Code:- Starting from whole length of both strings everytime we will check if both letters are equal , if yes then adding that in length and further go for shorter length,
-if not equal then we will take maximum of the lengths after discarding the uncommon letter from both strings.
+Approach 1:- 
+1. Base Case:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Recursive calls:- Starting from whole length of both strings everytime we will check if both letters are equal , if yes then adding that in length and recurse
+for shorter length, if not equal then we will take maximum of the lengths after discarding the uncommon letter from both strings.
+
+Approach 2:- Same as Approach 1 , only we are taking a DP matrix initialised with -1 and storing the length of common subsequence for particular size of both strings
+in that so that we don't have to calculate subsequence for that particular sizes again and hence the time complexity will reduce that's why called memoized version as 
+time complexity is reduced using extra memory.
+
+Approach 3:- Same as Approach 1 only converted the base case to initialisation and recursive calls to iterative version.
+1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
+else will not include that length and length will be the maximum of one less in the index.
 
 */
 
