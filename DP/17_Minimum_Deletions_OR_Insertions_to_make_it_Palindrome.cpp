@@ -63,7 +63,14 @@ int main()
 }
 /******************************************************************************************************/
 
-// [Minimum Insertion] https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
+/* [Minimum Insertion] (https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+
+Question:- We have to add minimum no of letters to make our string palindrome.
+
+Approach:- Find LCS of string and its reverse , now to make a string palindrome we can do two things either we can discard the single occurred elements 
+or we can add elements , so in insertion we will add that no of elements in our string.
+
+*/
 
 class Solution
 {
