@@ -1,5 +1,7 @@
-// [Minimum Deletion] https://practice.geeksforgeeks.org/problems/minimum-deletitions/0
-// [Form a Palindrome] https://practice.geeksforgeeks.org/problems/form-a-palindrome/0
+/* [Minimum Deletion] (https://practice.geeksforgeeks.org/problems/minimum-deletitions/0)
+   [Form a Palindrome] (https://practice.geeksforgeeks.org/problems/form-a-palindrome/0)
+   
+*/
 
 #include <iostream>
 #include <string>
