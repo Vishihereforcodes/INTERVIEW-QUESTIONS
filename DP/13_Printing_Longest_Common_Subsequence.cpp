@@ -1,6 +1,6 @@
 /* (https://www.geeksforgeeks.org/printing-longest-common-subsequence/)
 
-Question:- 
+Question:- Given two sequences, print the longest subsequence present in both of them.
 
 */
 
