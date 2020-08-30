@@ -1,5 +1,9 @@
 /* (https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0)
 
+Question:- Given two strings str1 and str2, find the shortest string that has both str1 and str2 as subsequences.
+
+Approach:-
+
 */
 
 #include <iostream>
