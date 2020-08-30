@@ -15,3 +15,6 @@ Dynamic Programming is mainly an optimization over plain recursion by which we c
 ## How to proceed in a DP problem?
 * Don't jump into Bottom up solution of DP directly , first try to solve the problem by recursion then memoize the recursion using DP matrix in which we store pre-processed 
 outputs for some particular input values , then convert the recursion into its iterative version by using loops and DP table.
+
+## How to choose the variables for making DP matrix?
+* We take those variables which are changing if we are changing in our problem like in string problems we take size of strings as the index variables of DP matrix.
