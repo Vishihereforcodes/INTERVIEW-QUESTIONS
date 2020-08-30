@@ -18,3 +18,5 @@ outputs for some particular input values , then convert the recursion into its i
 
 ## How to choose the variables for making DP matrix?
 * We take those variables which are changing if we are analysing our problem to convert it into smaller input problem like in string problems we take size of strings as the index variables of DP matrix.
+
+## Resources
