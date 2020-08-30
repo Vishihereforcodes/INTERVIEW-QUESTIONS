@@ -12,7 +12,7 @@ Now , upto this we got the length of the longest common subsequence in our botto
 What will we do now to get the substring?
 => We will traverse the length of the two stings from last upto first index and will check if the two letters are equal if yes then we will include that letter in
 our substring , else we will check that in DP matrix which length is greater (after excluding that letter of first string or after excluding that letter of second string) , 
-the one which is greater will shift to that length .
+the one which is greater we will shift to that length .
 
 */
 
