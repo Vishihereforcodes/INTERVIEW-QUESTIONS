@@ -1,4 +1,8 @@
-// https://www.geeksforgeeks.org/printing-longest-common-subsequence/
+/* (https://www.geeksforgeeks.org/printing-longest-common-subsequence/)
+
+Question:- 
+
+*/
 
 #include <iostream>
 #include <string>
