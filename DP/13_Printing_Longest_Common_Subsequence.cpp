@@ -3,7 +3,17 @@
 Question:- Given two sequences, print the longest subsequence present in both of them.
 
 Approach:- 
-Initialisation:- 
+1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
+else will not include that length and length will be the maximum of one less in the index.
+
+Now , upto this we got the length of the longest common subsequence in our bottom right cell of DP matrix.
+
+What will we do now to get the substring?
+=> We will traverse the length of the two stings from last upto first index and will check if the two letters are equal if yes then we will include that letter in
+our substring , else we will check that in DP matrix which length is greater (after excluding that letter of first string or after excluding that letter of first string) , 
+the one which is greater will shift to that length .
+
 */
 
 #include <iostream>
