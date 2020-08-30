@@ -4,6 +4,12 @@ Question:- Given a string str, find length of the longest repeating subsequence 
 i.e., any i’th character in the two subsequences shouldn’t have the same index in the original string.
 
 Approach:-
+We will apply LCS using below steps b/w string and itself string and will check simultaneously that if the letters are same and index is not same then it will be a 
+repeating letter and it will form a repeated string if t will get all the remaining characters repeated.
+
+1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length at one minus that index
+else will not include that length and length will be the maximum of one less in the index.
 
 */
 
