@@ -21,7 +21,7 @@ string longestCommonSubsequence(string X, string Y, int m, int n)
             if (X[i - 1] == Y[j - 1])
                 DP[i][j] = 1 + DP[i - 1][j - 1];
             else
-                DP[i][j] = 0;
+                DP[i][j] = max(DP[i-1][j], DP[i][j-1]);
         }
     }
 
