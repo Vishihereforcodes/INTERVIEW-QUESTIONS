@@ -1,6 +1,13 @@
 /* (https://practice.geeksforgeeks.org/problems/longest-common-substring/0)
 
 Question:- Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
+
+Approach :- 
+Now common substring means we have to take only continous letters in our output , if at any point we get break in our substring then we will make its size zero and will restart.
+1. Initialisation:- If either of the string is empty then empty substring(size 0) will be common in them.
+2. Code:- At every index we will check the equality of letters , if they are equal then the length will be previous length + this letter , else will initialise length with zero
+and will start again.
+
 */
 
 
