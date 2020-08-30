@@ -2,7 +2,8 @@
 
 Question:- Given two strings str1 and str2, find the shortest string that has both str1 and str2 as subsequences.
 
-Approach:-
+Approach:- 
+1. 
 
 */
 
