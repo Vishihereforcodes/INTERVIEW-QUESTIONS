@@ -2,6 +2,8 @@
 
 Question:- Given two sequences, print the longest subsequence present in both of them.
 
+Approach:- 
+Initialisation:- 
 */
 
 #include <iostream>
