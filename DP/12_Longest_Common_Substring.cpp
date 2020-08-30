@@ -1,6 +1,6 @@
 /* (https://practice.geeksforgeeks.org/problems/longest-common-substring/0)
 
-Question:-
+Question:- Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
 */
 
 
