@@ -1,3 +1,14 @@
+/* (https://www.geeksforgeeks.org/coin-change-dp-7/)
+
+Question:- We are given a array of coins and a sum . We have to count the possible combinations of coins to achieve the given sum.
+
+Approach:-
+1. Initialisation:- If our sum is zero then we can achieve it by not choosing any coin(null) , if we dont have any coin then we can achieve only zero sum.
+2. Code:- We will make choice only if our coin value is less than or equal to our given sum and to count all possible combinations we will add all possibilities 
+either after including or excluding the current element to get given sum.
+
+*/
+
 #include <iostream>
 using namespace std;
 
