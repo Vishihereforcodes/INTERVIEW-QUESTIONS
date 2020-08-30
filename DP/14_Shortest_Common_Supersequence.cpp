@@ -1,4 +1,6 @@
-// https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0
+/* (https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0)
+
+*/
 
 #include <iostream>
 #include <string>
