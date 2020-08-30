@@ -1,6 +1,17 @@
 /* [Minimum Deletion] (https://practice.geeksforgeeks.org/problems/minimum-deletitions/0)
    [Form a Palindrome] (https://practice.geeksforgeeks.org/problems/form-a-palindrome/0)
    
+   Question:- We have to find the minimum no of deletions to make the given string palindrome.
+   
+   Approach:-
+   To get minimum no of deletions we have to discard all the letters which are common in string and its reverse.
+   
+   1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
+   2. Code:- If letters at particular index of the matrix is equal then will include that length of longest subsequence will be one greater than the length 
+   at one minus that index else will not include that length and length will be the maximum of one less in the index.
+   
+   Using these steps we wil get LCS of the given string and its reverse and after subtracting LCS from string length we will get a palindrome.
+   
 */
 
 #include <iostream>
