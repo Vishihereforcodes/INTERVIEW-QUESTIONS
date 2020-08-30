@@ -25,9 +25,7 @@ string longestCommonSubsequence(string X, string Y, int m, int n)
         }
     }
 
-    int index = DP[m][n];
-    char result[index + 1];
-    result[index] = '\0';
+    string result = "";
     
     int i = m, j = n;
 
@@ -35,7 +33,7 @@ string longestCommonSubsequence(string X, string Y, int m, int n)
     {
         if (X[i - 1] == Y[j - 1])
         {
-            result[--index] = X[i - 1];
+            result = X[i - 1] + result;
             i--;
             j--;
         }
@@ -48,7 +46,7 @@ string longestCommonSubsequence(string X, string Y, int m, int n)
         }
     }
 
-   cout << result << "\n";
+   return result;
 }
 
 int main()
@@ -59,7 +57,7 @@ int main()
     cin >> m >> n;
     cin >> X >> Y;
 
-   longestCommonSubsequence(X, Y, m, n);
+   cout << longestCommonSubsequence(X, Y, m, n) << "\n";
 
     return 0;
 }
