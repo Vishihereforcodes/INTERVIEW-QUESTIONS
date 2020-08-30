@@ -21,3 +21,4 @@ An algorithm is an unambiguous specification of how to solve a class of problems
 
 * [Recursion](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Recursion)
 * [Binary Search](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Binary_search)
+* [Dynamic Programming](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/DP)
