@@ -1,6 +1,6 @@
 /* (https://leetcode.com/problems/longest-palindromic-subsequence/)
 
-Question:-
+Question:- Given a string s, find the longest palindromic subsequence's length in s. You may assume that the maximum length of s is 1000.
 
 Approach:-
 1. initialisation:- when any of the two strings is empty then empty subsequence will be common whose size will be zero.
