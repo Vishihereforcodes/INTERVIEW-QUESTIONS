@@ -1,4 +1,11 @@
-// https://practice.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions/0
+/* (https://practice.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions/0)
+
+Question:- Given two strings ‘str1’ and ‘str2’ of size m and n respectively. 
+The task is to remove/delete and insert minimum number of characters from/in str1 so as to transform it into str2
+
+Approach:-
+1. 
+*/
 
 #include <iostream>
 #include <string>
