@@ -5,4 +5,4 @@ Dynamic Programming is mainly an optimization over plain recursion by which we c
 
 ### Recursion + Memoization = Dynamic Programming
 
-### We just convert that memoized version of recursion into iteration by using a DP matrix to store the values for particular inputs so that we don't have to process them again.
+### We just convert that memoized version of recursion into iteration by using a DP matrix to store the answers for particular inputs so that we don't have to process them again.
