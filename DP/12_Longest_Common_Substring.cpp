@@ -1,4 +1,8 @@
-// https://practice.geeksforgeeks.org/problems/longest-common-substring/0
+/* (https://practice.geeksforgeeks.org/problems/longest-common-substring/0)
+
+Question:-
+*/
+
 
 #include <iostream>
 #include <string>
