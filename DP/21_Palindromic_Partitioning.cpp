@@ -110,11 +110,13 @@ int Partitions(string s , int i , int j)
 int main()
 {
     string s;
-    cin>>s;
-    
-    memset(DP , -1 , sizeof(DP));
-    
-    int n = s.size();
-    int i = 0 , j = n - 1;
-    cout<<"Minimum no of partitions to split the given string into palindromes is "<<Partitions(s , i , j);
+    int t;
+    cin >> t;
+   
+   while(t--)
+   {
+       cin>>s;    
+       memset(DP , -1 , sizeof(DP));
+       cout<<Partitions(s , 0, s.size() - 1) << "\n";
+   }
 }
