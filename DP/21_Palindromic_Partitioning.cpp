@@ -1,23 +1,23 @@
-/* (https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/)
+/* (https://leetcode.com/problems/palindrome-partitioning-ii/)
+   (https://practice.geeksforgeeks.org/problems/palindromic-patitioning/0)
 
 */
 
-#include<bits/stdc++.h>
-#include<stdio.h>
+#include<iostream>
+#include<cstring>
 using namespace std;
 
 int DP[1001][1001];
 
-bool isPalindrome(string s)
+bool isPalindrome(string s, int i, int j)
 {
     if(i >= j)
         return true;
     
     while(i < j)
     {
-        if(s[i] != s[j])
+        if(s[i++] != s[j--])
             return false;
-        i++; j--;
     }
     return true;
 }
@@ -39,7 +39,6 @@ int Partitions(string s , int i , int j)
 
         if(tempAns < minimum)
             minimum = tempAns;
-
     }
     return minimum;
 }
