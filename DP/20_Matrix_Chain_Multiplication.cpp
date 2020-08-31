@@ -1,3 +1,7 @@
+/* (https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/)
+
+*/
+
 #include<bits/stdc++.h>
 #include<stdio.h>
 using namespace std;
