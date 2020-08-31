@@ -1,10 +1,13 @@
-/* (https://www.geeksforgeeks.org/boolean-parenthesization-problem-dp-37/)
+/* https://practice.geeksforgeeks.org/problems/boolean-parenthesization/0
 
 */
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
+#include<unordered_map>
 using namespace std;
 
+//Solution 1: Using Recursion 
 int Evaluate(string s , int i , int j , bool isTrue)
 {
     // Empty string will be false.
@@ -65,12 +68,75 @@ int Evaluate(string s , int i , int j , bool isTrue)
     return ans;
 }
 
+//Solution 2: Using Recursion + Memoization
+unordered_map <string, int> m;
+int Evaluate(string s , int i , int j , bool isTrue)
+{
+    if(i > j)
+        return false;
+
+    if(i == j)
+    {
+        if(isTrue == true)
+            return s[i] == 'T';
+        else
+            return s[i] == 'F';
+    }
+    //Generate Key
+    string temp = to_string(i);
+    temp += " " + to_string(j) + " " + to_string(isTrue);
+    
+    //If Already Exist
+    if(m.find(temp) != m.end())
+        return m[temp];
+    
+    int ans = 0;
+
+    for(int k = i+1 ; k <= j-1 ; k += 2)
+    {
+        int LT = Evaluate(s , i , k-1 , true); 
+        int LF = Evaluate(s , i , k-1 , false); 
+        int RT = Evaluate(s , k+1 , j , true); 
+        int RF = Evaluate(s , i , k-1 , true);
+
+        if(s[k] == '&')
+        {
+            if(isTrue == true)
+                ans += LT * RT ;
+            else
+                ans += LF*RF + LF*RT + LT*RF;
+        }
+
+        else if(s[k] == '^')
+        {
+            if(isTrue == true)
+                ans += LF*RT + LT*RF;
+            else
+                ans += LT*RT + LF*RF;
+        }
+
+        else if(s[k] == '|')
+        {
+            if(isTrue == true)
+                ans += LT*RT + LT*RF + LF*RT ;
+            else
+                ans += LF*RF;
+        }
+    }
+    //Store the Key
+    return m[temp] = ans;
+}
+
 int main()
 {
+    int t, n;
     string s;
-    cin>>s;
-    int n = s.size();
-    int i = 0 , j = n-1 ;
-
-    cout<<"Number of ways to evaluate the boolean expression true is "<<Evaluate(s , i , j , true);
+    cin >> t;
+    while(t--)
+    {
+        cin >> n;
+        cin >> s;
+        m.clear(); //For solution 2
+        cout << Evaluate(s , 0 , n-1 , true) % 1003 << "\n";
+    }
 }
