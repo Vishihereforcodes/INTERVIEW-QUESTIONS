@@ -41,6 +41,31 @@ int Partitions(string s , int i , int j)
     return minimum;
 }
 
+// Solution2 :- Recursion + Memoization..
+int Partitions(string s , int i , int j)
+{
+    // if string is empty or of only one element then its already a palindrome.
+    if(i >= j)
+        return 0;
+    
+    if(isPalindrome(s , i , j))
+        return 0;
+    
+    if(DP[i][j] != -1)
+        return DP[i][j];
+    
+    int minimum = INT_MAX;
+    for(int k = i ; k <= j-1 ; k++)
+    {
+        int tempAns = 1 + Partitions(s , i , k) + Partitions(s , k+1 , j);
+
+        if(tempAns < minimum)
+            minimum = tempAns;
+
+    }
+    return DP[i][j] = minimum;
+}
+
 int main()
 {
     string s;
