@@ -1,4 +1,4 @@
-/* (https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/)
+/* (https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0)
 
 */
 
@@ -49,16 +49,20 @@ int Cost(int *arr , int i , int j)
 }
 int main()
 {
-    int n;
-    cin>>n;
-    int arr[n];
-    // order of matrix at index i will be arr[i-1]*arr[i].
-    for(int i = 0 ; i < n ; i++)
-    {
-        cin>>arr[i];
-    }
-    memset(DP , -1 , sizeof(DP));
+    int n,t;
+    cin >> t;
     
-    int i = 1 , j = n-1 ;
-    cout<<"Minimum cost of matrix chain multiplication is "<<Cost(arr , i , j);
+    while(t--)
+    {
+        cin>>n;
+        int arr[n];
+        // order of matrix at index i will be arr[i-1]*arr[i].
+        for(int i = 0 ; i < n ; i++)
+        {
+             cin>>arr[i];
+        }
+        memset(DP , -1 , sizeof(DP));
+
+        cout<<Cost(arr , 1 , n-1) << "\n";
+    }
 }
