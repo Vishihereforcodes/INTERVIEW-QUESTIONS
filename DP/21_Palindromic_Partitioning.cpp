@@ -15,6 +15,7 @@ bool isPalindrome(string s)
     return s == rev;
 }
 
+// Solution1 :- Recursive..
 int Partitions(string s , int i , int j)
 {
     // if string is empty or of only one element then its already a palindrome.
