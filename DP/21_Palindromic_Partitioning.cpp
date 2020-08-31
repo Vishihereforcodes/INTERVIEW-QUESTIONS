@@ -7,12 +7,16 @@ using namespace std;
 
 bool isPalindrome(string s)
 {
-    if(s=="")
-        return false;
-    string rev = s;
-    reverse(s.begin(),s.end());
-   
-    return s == rev;
+    if(i >= j)
+        return true;
+    
+    while(i < j)
+    {
+        if(s[i] != s[j])
+            return false;
+        i++; j--;
+    }
+    return true;
 }
 
 // Solution1 :- Recursive..
