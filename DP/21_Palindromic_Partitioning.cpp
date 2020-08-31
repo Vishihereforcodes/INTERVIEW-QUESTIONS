@@ -6,6 +6,8 @@
 #include<stdio.h>
 using namespace std;
 
+int DP[1001][1001];
+
 bool isPalindrome(string s)
 {
     if(i >= j)
