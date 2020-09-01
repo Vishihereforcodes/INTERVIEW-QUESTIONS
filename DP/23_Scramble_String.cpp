@@ -1,5 +1,8 @@
 /* (https://leetcode.com/problems/scramble-string/)
 
+Question:- Given two strings s1 and s2 of the same length, return true if s2 is a scrambled string of s1, otherwise, return false.
+Two strings are Scrambled strings if in their recursive trees the node values are reverse or equal of each other.
+
 */
 
 //Solution 1: Recursion (Give TLE)
