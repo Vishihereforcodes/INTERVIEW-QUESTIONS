@@ -1,5 +1,6 @@
 /* (https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0)
 
+Question:- Given a sequence of matrices, find the most efficient way to multiply these matrices together. We have to find the way which costs minimum.
 */
 
 #include<bits/stdc++.h>
