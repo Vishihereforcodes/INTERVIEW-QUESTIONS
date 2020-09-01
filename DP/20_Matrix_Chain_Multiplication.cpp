@@ -23,11 +23,14 @@ int Cost(int *arr , int i , int j)
     int Minimum = INT_MAX;
     
     // moving from first matrix which will be at index 1 and its order will be arr[0]*arr[1] 
-    // to last matrix which will be at index 
+    // to last matrix which will be at index n-2 and its order will be arr[n-3]*arr[n-2] .
     for(int k = i ; k <= j-1 ; k++)
     {
-        int tempAns = Cost(arr , i , k) + Cost(arr , k+1 , j) + arr[i-1]*arr[k]*arr[j];
+        // splitting the problem into two parts and finding answers of both parts and adding cost of multiplying both answers in temp.
+        int tempAns = Cost(arr , i , k) + Cost(arr , k+1 , j) + 
+            arr[i-1]*arr[k]*arr[j]; // this is cost of multiplying the left and right answers.
 
+        // getting minimum of all costs.
         if(tempAns < Minimum)
             Minimum = tempAns;
     }
