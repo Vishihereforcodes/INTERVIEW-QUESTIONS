@@ -2,6 +2,9 @@
 
 Question:- Given a sequence of matrices, find the most efficient way to multiply these matrices together. We have to find the way which costs minimum.
 
+How are we defining coat of matrix multiplication ?
+=> Let's asssume two matrices are there of order 10X30 and 30X20 so cost of multiplication of them will be 10*30*20 , we will take the common order element only once .
+
 */
 
 #include<bits/stdc++.h>
