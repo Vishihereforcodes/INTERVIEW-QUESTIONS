@@ -1,4 +1,6 @@
-// https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0
+/* (https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0)
+
+*/
 
 #include <iostream>
 using namespace std;
