@@ -1,6 +1,7 @@
 /* (https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0)
 
 Question:- Given a sequence of matrices, find the most efficient way to multiply these matrices together. We have to find the way which costs minimum.
+
 */
 
 #include<bits/stdc++.h>
@@ -11,11 +12,18 @@ int DP[1001][1001];
 // Solution1:- Recursive..
 int Cost(int *arr , int i , int j)
 {
-    if(i >= j)
+    // If there is no element in the array then we don't have any matrix .
+    if(i > j)
+        return 0;
+    
+    // If there is only one element in the array then we can't find the order of the matrix as order of matrix at ith index is arr[i-1]*arr[i].
+    if(i == j)
         return 0;
     
     int Minimum = INT_MAX;
-
+    
+    // moving from first matrix which will be at index 1 and its order will be arr[0]*arr[1] 
+    // to last matrix which will be at index 
     for(int k = i ; k <= j-1 ; k++)
     {
         int tempAns = Cost(arr , i , k) + Cost(arr , k+1 , j) + arr[i-1]*arr[k]*arr[j];
