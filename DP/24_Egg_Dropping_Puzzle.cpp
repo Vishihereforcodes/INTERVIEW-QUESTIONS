@@ -1,5 +1,8 @@
 /* (https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0)
 
+Question:- We are given no of eggs and no of floors . We have to find the threshold floor .
+Threshold floor is the first possible floor from which if we will throw the egg , it will not break.
+
 */
 
 #include <iostream>
