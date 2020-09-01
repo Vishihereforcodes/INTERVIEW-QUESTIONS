@@ -1,5 +1,9 @@
 /* (https://leetcode.com/problems/palindrome-partitioning-ii/)
    (https://practice.geeksforgeeks.org/problems/palindromic-patitioning/0)
+   
+   Question:- Given a string, a partitioning of the string is a palindrome partitioning if every sub-string of the partition is a palindrome. 
+   We have to find the mnimum cuts which will convert our string into all palindromes.
+   
 */
 
 #include <iostream>
