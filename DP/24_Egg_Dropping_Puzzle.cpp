@@ -11,6 +11,8 @@ using namespace std;
 // Solution 1: Using Recursion
 int eggDropPuzzle(int eggs, int floors)
 {
+    // If there is only one floor then at worst case it will be the only threshold floor if egg will not break throwing from it.
+    // If there is only one egg then in worst case
     if(floors == 1 || eggs == 1)
         return 1;
 
