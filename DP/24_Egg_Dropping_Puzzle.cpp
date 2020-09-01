@@ -1,6 +1,6 @@
 /* (https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0)
 
-Question:- We are given no of eggs and no of floors . We have to find the threshold floor .
+Question:- We are given no of eggs and no of floors . We have to find the minimum no of ways to find the threshold floor .
 Threshold floor is the first possible floor from which if we will throw the egg , it will not break.
 
 */
