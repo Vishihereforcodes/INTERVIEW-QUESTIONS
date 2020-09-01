@@ -1,4 +1,4 @@
-/* https://practice.geeksforgeeks.org/problems/boolean-parenthesization/0
+/* (https://practice.geeksforgeeks.org/problems/boolean-parenthesization/0)
 
 */
 
@@ -82,11 +82,11 @@ int Evaluate(string s , int i , int j , bool isTrue)
         else
             return s[i] == 'F';
     }
-    //Generate Key
+    //Generate unique Key .
     string temp = to_string(i);
     temp += " " + to_string(j) + " " + to_string(isTrue);
     
-    //If Already Exist
+    //If key value Already Exist.
     if(m.find(temp) != m.end())
         return m[temp];
     
@@ -136,7 +136,7 @@ int main()
     {
         cin >> n;
         cin >> s;
-        m.clear(); //For solution 2
-        cout << Evaluate(s , 0 , n-1 , true) % 1003 << "\n";
+        m.clear(); //For solution 2(to avoid unwanted values in the map.)
+        cout << Evaluate(s , 0 , n-1 , true) % 1003 << "\n"; // to avoid overflow.
     }
 }
