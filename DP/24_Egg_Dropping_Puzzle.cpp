@@ -15,7 +15,7 @@ int eggDropPuzzle(int eggs, int floors)
     // If there is only one egg then we will start throwing the egg from lowermost building so that it will not break before reaching the threshold floor , 
     // so in worst case, egg will break on lowermost foor and it will be threshold floor.
     if(floors == 1 || eggs == 1)
-        return 1;
+        return floors;
 
     int minimum = INT_MAX;
     // We will break our floors into two parts and will check in both parts by throwing the eggs and will get attemps from both and 
