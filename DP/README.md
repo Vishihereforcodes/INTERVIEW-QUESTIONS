@@ -27,10 +27,6 @@ The tabulated program for a given problem builds a table in bottom up fashion an
 * We will optimise the recursion solution by DP only if our recursion will have more than one branches (if it have overlapping property).
 * If we have any optimum keyword in our problem like maximum , minimum etc.
 
-### Recursion + Memoization = Dynamic Programming
-
-### We just convert that memoized version of recursion into iteration by using a DP matrix to store the answers for particular inputs so that we don't have to process them again.
-
 ## How to proceed in a DP problem?
 * Don't jump into Bottom up solution of DP directly , first try to solve the problem by recursion then memoize the recursion using DP matrix in which we store pre-processed 
 outputs for some particular input values , then convert the recursion into its iterative version by using loops and DP table.
