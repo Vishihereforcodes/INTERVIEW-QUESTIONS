@@ -57,7 +57,7 @@ int main()
     while (t--)
     {
         cin >> eggs >> floors;
-
+        memset(DP, -1, sizeof(DP));//For solution 2
         cout << eggDropPuzzle(eggs, floors) << "\n";
     }
 }
