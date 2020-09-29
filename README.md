@@ -13,6 +13,10 @@ A data structure is a particular way of organizing and storing data in a compute
 * [Heap](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Heaps)
 * [Stack](https://github.com/urvashi-code1255/INTERVIEW-QUESTIONS/tree/master/Stack)
 
+### Next Topic
+
+ * Graph
+ 
 ## Algorithms
 
 An algorithm is an unambiguous specification of how to solve a class of problems. It is a set of rules that precisely define a sequence of operations.
