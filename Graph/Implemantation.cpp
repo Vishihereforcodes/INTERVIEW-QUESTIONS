@@ -9,7 +9,6 @@ template <typename T>
 class Graph
 {
     unordered_map<T, list<T> > adjList;
-
 public:
     Graph() {
     }
@@ -18,6 +17,8 @@ public:
     void addEdge(T u, T v, bool bidir = true)
     {
         adjList[u].push_back(v);
+        
+        // If it is bidirectional
         if (bidir)
         {
             adjList[v].push_back(u);
@@ -28,7 +29,7 @@ public:
     {
         for (auto row : adjList)
         {
-            // row.first = key of map & row.second = list
+            // Here row will be a pair. Where row.first is representing current vertex & row.second is list of its neighbouring vertices.
             cout << row.first ;
 
             for (auto x : row.second)
@@ -42,6 +43,7 @@ public:
 
 int main()
 {
+    // All T in Graph class will be replaced by string
     Graph<string> g;
     g.addEdge("Amritsar", "Delhi");
     g.addEdge("Amritsar", "Jaipur");
