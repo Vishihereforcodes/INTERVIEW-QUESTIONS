@@ -1,6 +1,6 @@
  <h1 align="center">Data Structures And Algorithms</h1>
 
-This repository contains some of the important interview questions on important Data structures and Algorithms topics.
+This repository contains some of the important interview questions on *important* Data structures and Algorithms topics.
 Each algorithm and data structure has its own separate README with related explanations and links for further reading (including ones to YouTube videos).
 
 <h2 align="center">Data Structures</h2>
@@ -14,7 +14,7 @@ A data structure is a particular way of organizing and storing data in a compute
 
 **Next Topic**
 
- * Graph
+* Graph
  
 <h2 align="center">Algorithms</h2>
 
