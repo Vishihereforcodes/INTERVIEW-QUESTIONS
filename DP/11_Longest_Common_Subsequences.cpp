@@ -66,7 +66,7 @@ public:
     }
 };
 
-// Solution 3: DP(Bottom Up)
+// Solution 3: DP(Bottom Up) // Tabulation
 class Solution
 {
 public:
