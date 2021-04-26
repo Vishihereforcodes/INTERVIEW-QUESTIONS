@@ -8,7 +8,16 @@ using namespace std;
 template <typename T>
 class Graph
 {
-    unordered_map<T, list<T> > adjList;
+    unordered_map<T, list<T> > adjList;  /* Well, it's always good to used "unordered_map" styling Graph instead of "list representation" like given on GFG and other websites..
+                                            obviously  hashmap give us a node in constant time (almost). Moreover, Graph representation with unordered_map not always work because it 
+                                            distores all the arrangements(random manner), to prove Graph representation with unordered_map doesn't work on kahn's DFS based algorithm..
+                                            Hence, it's good to use hashmap but not always. So, to overcome this use MAP representation of graph, however it's it increases the time from constant to Logarithmic, but maintain 
+                                            the order of vertices. 
+                                            To more icing on cake, Don't you think Vector will be more suitable with unordered_map or map.. it'll gradually decrease the excution time and Cache friendly..
+                                            Template are like this:
+                                            unordered<(datatype), vector<(Datatype)>> adj;
+                                            map<(datatype), vector<(Datatype)>> adj;
+                                            Perhaps(most probably), you already knew this :) */
 public:
     Graph() {
     }
